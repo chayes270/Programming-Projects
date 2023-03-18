@@ -5,14 +5,6 @@
 #  sum of adjacent numbers when given a number inside the spiral. 1 is adjacent
 #  to 2, 3, 4, 5, 6, 7, 8, 9 and the sum of those excluding 1 is 44.
 
-#  Student Name: Cody Hayes
-
-#  Student UT EID: cmh 5538 
-
-#  Course Name: CS 313E
-
-#  Unique Number: 86439
-
 #  Date Created: 6-4-22
 
 #  Date Last Modified: 6-5-22
