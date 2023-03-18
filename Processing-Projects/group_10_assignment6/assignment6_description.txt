@@ -1,0 +1,53 @@
+This project is meant to simulate an ecosystem with moving predators and prey.
+
+Included Classes:
+
+   (All members)
+ - Ecosystem: Manages the interactions between Hawks, Birds, and Bees.
+
+   (Anneris)
+ - Bird: a Boid-like object that moves based off attractive and repulsive "forces"
+         within the canvas. Each bird flocks toward other nearby Birds, avoids Hawks,
+         and seeks out Bees. Birds can die if eaten by Hawks, or reproduce if they eat
+         bees. Birds are displayed as black ellipses with yellow beaks, and face the
+         direction that they are traveling.
+
+         Birds are not exactly Boids, as they do not function using a heading. Instead,
+         they change thei velocity parameters based off the postition of other objects
+         in relation to them.
+
+   (Anneris)
+ - Flock: Manages the movements and interactions between all Birds.
+
+ 
+   (Abdullah)
+ - Hawk: A Boid-like object that roughly simulates how a group of Hawks might behave
+         while they mutually attempt to hunt a flock of birds. Each hawk is attracted
+         to every bird, with each birds weighting being determined by its proximity.
+	 Closer birds are weighted higher, and farther birds are included so as to 
+	 move towards all the birds as a whole. Hawks also don't want their prey to
+	 be poached by another hawk, so they avoid each other. Hawks have got to eat
+	 and compete so avoiding a nearby hawks is weighted less in their movement than
+	 a nearby bird.
+
+	 I use an approach which is essentially a many body problem where I find the 
+	 vector between each hawk/bird pair and hawk/hawk pair and use an inverse 
+	 square relation to weight their importance in where the hawk will accelerate 
+	 towards.
+	
+   (Cody)
+- Bee: A Boid-like object that simulates a group of bees that act more like birds, but in
+	this context it is meant to show the interactions between particles (animals). The bees
+	try to stay together as much as possible, but also avoid colliding into each other. The 
+	bees are guided by two forces, flocking and avoiding predators. Flocking consists of 
+	three smaller forces of seperation, direction, and cohesion. Meaning they stay 
+	seperate of one another, head in similar directions, and also stay relatively close to 
+	each other. I took inspiration from processing.org examples of particle systems.
+	
+	
+  - FlockBee: In this class, I created an ArrayList of bees to treat all the bees as a 
+  	    cohesive list. This also has the run() method which displays and updates the bees
+	    simultaneously.
+	
+	
+	
