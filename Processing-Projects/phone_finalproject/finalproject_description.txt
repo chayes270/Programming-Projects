@@ -1,0 +1,83 @@
+This project is a Phone simulator with an interactive Graphic User Interface. Within the phone can be 
+found some apps that the user can use.
+
+Below is a list of classes with details on their functionality and which member contributed to them.
+
+ - App (Anneris)
+     Each App object can be given a name and icon image. An App keeps track of its status 
+     (open or closed), name, icon, and position. Apps have functions thatallow them to run
+     their code, be closed, or displaytheir icons. Icons are displayed as small square 
+     images at the position the App is given by the App Manager. 
+
+ - AppManager (Anneris)
+     The AppManager contains all Apps in an array and manages the display/run of all its 
+     Apps. The AppManager calculatesand sets the position of each of its Apps, and displays 
+     eachApp's name in white text under its icon. If an app is clickedon, the AppManager 
+     will open it and run its code. Thereis also functionality for adding/deleting apps, but
+     no currentway to access these functions from the GUI.
+
+ - Button (Anneris)
+     A simple rectangular button that can be given a label and fill color. Tracks whether or 
+     not it is 'on' by checking if the user has clicked within its bounds.
+
+ - Homescreen (Anneris)
+     Keeps track of its status (open or close), a background image, and an AppManager. When 
+     running, displays the background and AppManager apps. Has functionality for setting a new 
+     background or resetting to the default background, but there is no current way to access
+     these functions from the GUI yet.
+
+ - Photo (Anneris)
+     Contains a file name, PImage, position, and icon.When displayed, shows a small rectangular
+     copy ofthe original image at its given position as its icon. Can check if it has been 
+     clicked on and keep track of this status.
+
+ - PhotoEditor (Anneris)
+     Opens a window displaying a given photo, two status buttons at the bottom of the screen, 
+     and the name ofthe current filter. When clicking the previous or nextbuttons, a new filter
+     will be applied to the currentphoto as well as the current filters name will appear. The 
+     editor is not currently at its best state due to theneed to fit photos to the phone screen. 
+     Because of this,photos lose quite a lot of resolution.
+
+ - PhotoLibrary (Anneris)
+     Similar to the AppManager, the Library manages the display of all Photos stored within it.
+     Each photo is given aposition to be displayed at, and new photos can be added.When first 
+     created, the library reads in all files from theData/Photos/ directory and adds all 
+     convertible images intothe library as a Photo.
+
+ - PhotosApp (Anneris)
+     Uses a PhotoLibrary and PhotoEditor to allow the user to see a camera roll of their photos 
+     and place filters on them if they wish. Adds a back button and save button over the editor 
+     to allow the user to save a photo that has been edited or return to the library. When a 
+     photo is saved, it is added to the Data/Photos directory. Currently, the edited photos do
+     not dave very well due to the Processing methods available to save an image to file. There
+     were plans to be able to delete photos within the app, but this was not possible to 
+     implement due to time constraints. THE PHOTOS APP IS CURRENTLY QUITE A BIT LAGGY. I WOULD
+     RECOMMEND WAITING A MOMENT BETWEEN CLICKS, AS SOMETIMES THE EDITOR IS OPENED IMMEDIATELY 
+     UPON OPENING THE APP. This can be fixed by clicking the "Back" button.
+
+ - GameButton (Abdullah)
+	A button class adapted to be used in the game to choose the difficulty.
+
+ - Game Manager (Abdullah)
+	Consolidation of our Assignment 7 game into a class that manages all of the functions
+	of the game. Closing the app and then reopening it just takes you back where you left
+	off in the game. To restart, closing the phone and then restarting is necessary. New
+	features are an additional difficulty mode, a new animation of flames emitting from 
+	the engines of the ship, and a firing sound when shooting. Will include the 
+	assignment_7_description file renamed to space_invaders_description with updated controls.
+
+ - Clock (Abdullah)
+	A simple clock graphic that visualizes the current system clock time.
+
+ - ClockApp (Abdullah)
+	Uses a Clock class to visualize the system time and also includes a digital clock of the
+	current time, as well as digital clocks of other time zones such as EST, PST, and GMT.
+ - Homescreen(Cody)
+ 	A simple homescreen that starts the program with some display features
+	
+- Calculator (Cody)
+	A simple calculator similar to the iOS calculator. Includes addition, multiplication,
+	subtraction and division.
+- Eval (Cody)
+	A class that calculates the expression that is put in by the user using infix expressions.
+	
