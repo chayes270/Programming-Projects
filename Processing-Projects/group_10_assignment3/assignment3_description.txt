@@ -1,0 +1,86 @@
+Each program, it's description, and the group member
+who worked on it written below.
+
+1. extract_words.py
+    Group Member: Anneris Rodriguez
+    
+    Description: This program reads in greatGatsby.txt
+                 and writes the three text files
+                 necessary to run the other programs.
+    
+    Features: Makes use of the logging library to ensure 
+              that the paths to each text file are not
+              broken or already exist.
+
+              Use of docstrings and typehints to help
+              readability of the code.
+
+              Automatically places uniquewords.txt and 
+              wordfrequency.txt into the respective data 
+              folder associated with the Processing file 
+              that will be using it.
+
+
+2. a3_novelvisualization.pde
+    Group Member: Abdullah Hossain
+
+    Description: This program generates a word cloud
+		 in the Processing canvas.
+
+    Features: Successively draws words with one of
+	      three colors picked randomly, making
+	      sure that words do not get cut off.
+	      Clicking the canvas generates a new
+	      set of words and stars.
+
+	      Color choices: The blue color is used
+	      in the cover of the book, actually a
+	      painting named "Celestial Eyes" by 
+	      Francis Cugat. Yellow is chosen as it
+	      is the color of his car and gold, a symbol
+	      of his newfound wealth. Green is used due 
+	      to the importance of the green light to
+	      Gatsby, reminding him to keep moving.
+
+	      The font is called Imprint MT Shadow.
+	      It looks like it has a shadow, giving it
+	      an almost 3D effect as well, as well as
+	      looking fancier overall. Font size is 35,
+	      which I believe to be a good compromise
+	      between readability and word count.
+
+	      There are stars randomly drawn against
+	      a black background alluding to the
+	      frequent and extravagant parties hosted
+	      by Gatsby. Originally I wanted to
+	      include fireworks, but they did not look
+	      too great.
+
+3. a3_wordfrequency.pde
+    Group Member: Cody Hayes
+
+    Description: This program generates a visual 
+    		 representation of word freqeuencies of the 
+		 words found in the Great Gatsby.
+
+    Features: In this program, the entries of 
+    	      the wordfrequency.txt file are transformed 
+	      into an IntDict and the keys are transformed 
+	      into an Int array. Using a mathematical formula, 
+	      the entries are used as points on a scatter point graph using the Circle primitive. 
+    	      Text translation and rotataion were used to label the y-axis of the graph.
+	      
+	      The maximum of the x-axis is 2572 and the y-axis is 3650. Using a sketch
+	      size of 2572x3650 is not feasible, so the points are scaled to fit in an 
+              approximately 1600x1000 grid by scaling/translating the x coordinates and 
+	      scaling/translating the y coordinates to exclude the smallest frequency
+	      and the largest frequency to increase the clarity.
+	      
+	      The hardest part of this section was scaling the y coordinates to fit a normal left 
+	      hand graph(origin is bottom left, up and right are positive in the y and x planes,
+	      respectively) from processing's normal coordinate system, (0,0) is the top left most
+	      pixel and down is postive in the y axis.
+	      
+	      
+
+                           
