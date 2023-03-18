@@ -1,1 +1,1 @@
-This folder contains python projects.
+This folder contains python projects/algorithms I have created independently.
