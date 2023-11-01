@@ -1,2 +1,1 @@
-These are projects I worked on using the Processing language, using a form of Java. These projects have been created jointly with Annaris
-Rodriguez and Abdullah Hossain.
+These are projects I worked on in the Java-based language, Processing. In these projects, I learned the fundamentals of computer graphics and data visualization which includes graph generation, image manipulation, scene hierarchy, simulation, and interactivity. These projects have been created jointly with Annaris Rodriguez and Abdullah Hossain.
